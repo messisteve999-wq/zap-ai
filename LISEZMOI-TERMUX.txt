@@ -1,0 +1,17 @@
+zap-ai - fenêtres flottantes, 3 catégories, renouvellement toutes les 2 h
+
+Termux :
+  pkg install unzip python git -y
+  termux-setup-storage
+  cd ~ && unzip /sdcard/Download/zap-ai.zip && cd zap-ai
+  python -m http.server 8080
+Ouvre http://localhost:8080 dans Chrome > menu > "Installer l'application".
+
+GitHub (dépôt vide nommé zap-ai créé sur github.com) :
+  git init && git add . && git commit -m "zap-ai"
+  git branch -M main
+  git remote add origin https://github.com/TON_PSEUDO/zap-ai.git
+  git push -u origin main
+(mot de passe = token personnel GitHub, à ne jamais partager)
+
+Ajouter des messages : modifie data.js (une ligne = un message).
